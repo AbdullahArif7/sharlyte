@@ -15,8 +15,15 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sharlyte Staffing Solutions | Premium Healthcare Staffing",
-  description: "Luxury healthcare staffing agency providing human-centered healthcare recruitment.",
+  title: {
+    default: "Sharlyte Staffing Solutions | Premium Healthcare Staffing",
+    template: "%s | Sharlyte Staffing Solutions"
+  },
+  description: "Luxury healthcare staffing agency providing human-centered healthcare recruitment. Connecting facilities with exceptional talent across Texas, Florida, and beyond.",
+  keywords: ["Healthcare Staffing", "Nursing Jobs", "Staffing Solutions", "Texas Healthcare Recruitment", "Per Diem Nursing", "Travel Nursing"],
+  icons: {
+    icon: '/images/icon.png',
+  },
 };
 
 export default function RootLayout({
